@@ -1,0 +1,124 @@
+/* PAGE BASE */
+.payment-page {
+  min-height: 100vh;
+  background: #f8f8fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+/* BACKGROUND (reuse your register style feel) */
+.bg-circle {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(10px);
+  z-index: 0;
+}
+
+.circle-1 {
+  width: 350px;
+  height: 350px;
+  background: linear-gradient(135deg, rgba(123,63,255,0.2), rgba(49,91,255,0.15));
+  top: -120px;
+  left: -100px;
+}
+
+.circle-2 {
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(135deg, rgba(80,0,255,0.15), rgba(85,120,255,0.12));
+  bottom: -150px;
+  right: -120px;
+}
+
+/* CARD */
+.payment-card {
+  width: 90%;
+  max-width: 420px;
+  background: white;
+  padding: 40px 25px;
+  border-radius: 30px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* STATE BOX */
+.state-box h2 {
+  margin-top: 18px;
+  font-size: 1.6rem;
+  color: #08122f;
+}
+
+.state-box p {
+  margin-top: 10px;
+  color: #6b7285;
+  line-height: 1.6;
+}
+
+/* ICONS */
+.icon {
+  font-size: 65px;
+}
+
+.success {
+  color: #22c55e;
+}
+
+.error {
+  color: #ef4444;
+}
+
+/* SPIN */
+.spin {
+  animation: spin 1s linear infinite;
+  color: #7a3cff;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* BUTTONS */
+.whatsapp-btn {
+  margin-top: 25px;
+  width: 100%;
+  height: 55px;
+  border: none;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #7a3cff, #2456ff);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  transform: translateY(-2px);
+}
+
+.back-btn {
+  margin-top: 25px;
+  width: 100%;
+  height: 55px;
+  border: none;
+  border-radius: 18px;
+  background: #111827;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.back-btn:hover {
+  transform: translateY(-2px);
+}
