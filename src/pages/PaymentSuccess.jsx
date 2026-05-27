@@ -34,7 +34,7 @@ const PaymentSuccess = () => {
 
   const joinWhatsApp = () => {
     window.location.href =
-      "https://chat.whatsapp.com/YOUR_GROUP_LINK";
+      "https://chat.whatsapp.com/Ft2p5jz8gwg2a5fPzV0pHA?mode=gi_t";
   };
 
   return (
