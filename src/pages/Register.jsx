@@ -185,7 +185,7 @@ const Register = () => {
     "Backend",
   ];
 
-  // HANDLE INPUT CHANGE
+  // INPUT CHANGE HANDLER
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -193,7 +193,7 @@ const Register = () => {
     });
   };
 
-  // SUBMIT FORM
+  // SUBMIT HANDLER
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -211,7 +211,7 @@ const Register = () => {
       };
 
       const res = await axios.post(
-        "http://localhost:5000/api/register",
+        `${process.env.REACT_APP_API_URL}/api/register`,
         payload
       );
 
@@ -372,7 +372,7 @@ const Register = () => {
               </div>
             </div>
 
-            {/* SUBMIT */}
+            {/* SUBMIT BUTTON */}
             <button
               type="submit"
               className="register-btn"
